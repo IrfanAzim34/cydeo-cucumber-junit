@@ -25,7 +25,6 @@ public class Login_Step_Defs {
     }
     @When("user enters student password")
     public void user_enters_student_password() {
-        // Write code here that turns the phrase above into concrete actions
         System.out.println("User enters student password");
     }
 
