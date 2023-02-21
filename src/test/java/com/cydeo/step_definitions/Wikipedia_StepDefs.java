@@ -7,7 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class WikipediaStepDefinitions {
+public class Wikipedia_StepDefs {
 
     WikipediaSearchPage wikipediaSearchPage = new WikipediaSearchPage();
     @Given("User is on Wikipedia home page")

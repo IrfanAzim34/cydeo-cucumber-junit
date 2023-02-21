@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 
-public class GoogleStepDefinitions {
+public class Google_StepDefs {
 
     GoogleSearchPage googleSearchPage = new GoogleSearchPage();
     @Given("user is on the Google search page")
