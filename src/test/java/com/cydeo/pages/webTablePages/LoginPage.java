@@ -1,4 +1,4 @@
-package com.cydeo.pages;
+package com.cydeo.pages.webTablePages;
 
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class WebTableLoginPage {
+public class LoginPage {
 
-    public WebTableLoginPage(){
+    public LoginPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

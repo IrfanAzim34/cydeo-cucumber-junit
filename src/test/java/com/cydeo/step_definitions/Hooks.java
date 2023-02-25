@@ -13,17 +13,17 @@ public class Hooks {
 
     //import from io.cucumber.java not from junit
 //    @Before(order = 0)
-    public void setupScenario(){
+    public void setupScenario() {
         System.out.println("====Setting up browser using cucumber @Before");
     }
 
-//    @Before(value = "@login",order = 1)
-    public void setupScenarioForLogins(){
+    //    @Before(value = "@login",order = 1)
+    public void setupScenarioForLogins() {
         System.out.println("====This will only apply to scenarios with @login tag");
     }
 
     @After
-    public void teardownScenario(Scenario scenario){
+    public void teardownScenario(Scenario scenario) {
         if (scenario.isFailed()) {
             byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
@@ -32,13 +32,13 @@ public class Hooks {
         Driver.closeDriver();
     }
 
-//    @BeforeStep
-    public void setupStep(){
+    //    @BeforeStep
+    public void setupStep() {
         System.out.println("--------->applying setup using @BeforeStep");
     }
 
-//    @AfterStep
-    public void afterStep(){
+    //    @AfterStep
+    public void afterStep() {
         System.out.println("--------->applying teardown using @AfterStep");
     }
 
