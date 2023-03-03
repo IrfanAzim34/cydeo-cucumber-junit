@@ -17,6 +17,7 @@ Feature: Wikipedia search functionality
     When User types "Steve Jobs" in the wiki search box
     And User clicks wiki search button
     Then User sees "Steve Jobs" is in the image header
+
   @scenarioOutline
   Scenario Outline: Wikipedia Search Functionality Title Verification
     Given User is on Wikipedia home page
@@ -33,3 +34,4 @@ Feature: Wikipedia search functionality
       | Chuck Norris      | Chuck Norris      | Chuck Norris       |
       | Antony Hopkins    | Antony Hopkins    | Antony Hopkins     |
       | Lady Gaga         | Lady Gaga         | Lady Gaga          |
+      | Donald Trump      | Donald Trump      | Donald Trump       |
