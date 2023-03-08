@@ -91,7 +91,7 @@ public class Driver {
     public static WebDriver getDriver() {
 
         if (driverPool.get() == null) {
-            String browser = ConfigurationReader.getProperty("browser");
+            String browser;
             if (System.getProperty("BROWSER") == null) {
                 browser = ConfigurationReader.getProperty("browser");
             } else {
